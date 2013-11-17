@@ -33,29 +33,35 @@ Enjoy.
 Agenda
 ======
 
-## Idea: 100%
+Idea: 100%
 - See above
-## Concept: 95%
-- See above
-## Design & Architecture: 25%
+Concept: 95%
+a- See above
+
+Design & Architecture: 25%
 - Decision to implement as a wayland compositor which at the same time is a client (nested)
 - base it on qtwayland
 - Target to include X11-games (not yet sure how, probably a separate X11-instance for every window - any suggestion?. Is the problem completely solvable with X11-technology instead?)
 - Target not just games, but also applications
 - Target to be added as plugin into at least one wayland session compositor (KWin is my favourite) and logind to avoid context switches and to reuse their awesome window management abilities
-## Proof of Concept: 0%
+
+Proof of Concept: 0%
 - this is the next thing I'm going to work on
-## Implementation: 0%
+
+Implementation: 0%
 - functionality as above
 - after association is completed, don't render, instead forward client windows as scanout buffers
-## Enhancements: 0%
+
+Enhancements: 0%
 - X11
 - Restart reassociation
 - Persistence
 - Enable non-games, sessions
 - Enable late attached input device to attach to a session autonomously or by being grabbed by one of the sessions
-## Integration: 0%
+
+Integration: 0%
 - Ship with a distro
 - Ship as session compositor plugin
 - Ship as system compositor plugin
+
 Documentation: 5%
