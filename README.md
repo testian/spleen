@@ -5,7 +5,7 @@ a split screen emulator for games that don't natively support split screen, impl
 
 With wayland we get the building blocks to create highly-integrated multiseat solutions with zero need for configuration, as easy as playing split screen on your game console.
 
-The difference here is that we'll enable you to play just ANY game split screen (Minecraft, Quake, ) and using whatever and how many controls you like (Gamepad, Joystick, Mouse, Keyboard)
+The difference here is that we'll enable you to play just ANY game split screen (Minecraft, Quake, ) and using whatever and how many controls you like (Gamepad, Joystick, Mouse, Keyboard, Wheel)
 
 How it is going to work
 =======================
@@ -34,7 +34,9 @@ Agenda
 ======
 
 Idea: 100%
+- See above
 Concept: 95%
+- See above
 Design & Architecture: 25%
 - Decision to implement as a wayland compositor which at the same time is a client (nested)
 - base it on qtwayland
@@ -42,7 +44,10 @@ Design & Architecture: 25%
 - Target not just games, but also applications
 - Target to be added as plugin into at least one wayland session compositor (KWin is my favourite) and logind to avoid context switches and to reuse their awesome window management abilities
 Proof of Concept: 0%
+- this is the next thing I'm going to work on
 Implementation: 0%
+- functionality as above
+- after association is completed, don't render, instead forward client windows as scanout buffers
 Enhancements: 0%
 - X11
 - Restart reassociation
