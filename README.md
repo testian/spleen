@@ -34,9 +34,10 @@ Agenda
 ======
 
 Idea: 100%
-- See above
+
+
 Concept: 95%
-a- See above
+
 
 Design & Architecture: 25%
 - Decision to implement as a wayland compositor which at the same time is a client (nested)
